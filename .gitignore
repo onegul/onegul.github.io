@@ -1,0 +1,29 @@
+# --- Kotlin/JS & Gradle ---
+.gradle
+build/
+bin/
+out/
+.kotlin/
+kotlin-js-store/
+
+# --- Node/JS Dependencies ---
+# Kotlin/JS uses NPM/Yarn internally to manage JS dependencies
+node_modules/
+package-lock.json
+yarn.lock
+*.lock
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.iws
+*.ipr
+# Will see later if I wnat to share run configurations
+# !.idea/runConfigurations/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Project Specific ---
+local.properties

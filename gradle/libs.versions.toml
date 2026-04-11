@@ -1,0 +1,12 @@
+[versions]
+kotlin = "2.3.20"
+composeMultiplatform = "1.10.3"
+
+[libraries]
+compose-runtime = { group = "org.jetbrains.compose.runtime", name = "runtime", version.ref = "composeMultiplatform" }
+compose-html = { group = "org.jetbrains.compose.html", name = "html-core", version.ref = "composeMultiplatform" }
+
+[plugins]
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
