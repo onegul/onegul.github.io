@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Gulshan — Android Engineer specialising in BLE, Wi-Fi P2P, NSD, and proximity-based systems. Building Linger and Whisper."/>
+    <meta name="theme-color" content="#f8f9fa"/>
+    <meta property="og:title" content="Gulshan · Android Engineer"/>
+    <meta property="og:description"
+          content="6 years of Android engineering. Low-level systems, proximity tech, and classical philosophy."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://onegul.github.io"/>
+
+    <title>Gulshan · Android Engineer</title>
+
+    <!-- Google Fonts: refined editorial pairing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@300;400&display=swap"
+          rel="stylesheet"/>
+
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --md-sys-color-primary: #1a6b4a;
+            --md-sys-color-on-primary: #ffffff;
+            --md-sys-color-primary-container: #b7f0d1;
+            --md-sys-color-secondary: #4a6358;
+            --md-sys-color-surface: #f8faf9;
+            --md-sys-color-surface-variant: #dce8e2;
+            --md-sys-color-on-surface: #191c1a;
+            --md-sys-color-on-surface-variant: #3f4d47;
+            --md-sys-color-outline: #6f7e77;
+            --md-sys-color-outline-variant: #bdc9c3;
+            --md-elevation-1: 0 1px 2px rgba(0, 0, 0, .06), 0 1px 3px rgba(0, 0, 0, .1);
+            --md-elevation-2: 0 2px 6px rgba(0, 0, 0, .08), 0 2px 8px rgba(0, 0, 0, .12);
+            --md-elevation-3: 0 4px 12px rgba(0, 0, 0, .1), 0 4px 16px rgba(0, 0, 0, .14);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 28px;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+            --font-mono: 'DM Mono', monospace;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--md-sys-color-surface);
+            color: var(--md-sys-color-on-surface);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Loading shimmer */
+        #root:empty::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(90deg,
+            var(--md-sys-color-surface) 25%,
+            var(--md-sys-color-surface-variant) 50%,
+            var(--md-sys-color-surface) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.6s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--md-sys-color-outline-variant);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--md-sys-color-outline);
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
+<script src="app.js"></script>
+</body>
+</html>
