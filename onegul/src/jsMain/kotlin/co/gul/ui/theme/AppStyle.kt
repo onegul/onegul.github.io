@@ -72,7 +72,7 @@ object AppStyle : StyleSheet() {
         property("grid-template-columns", "1fr 1fr")
         property("min-height", "calc(100vh - 64px)")
         property("align-items", "center")
-        property("max-width", "1300px")
+        property("max-width", "1200px")
         property("margin", "0 auto")
         padding(Spacing.xxxl, Spacing.xl)
         gap(Spacing.xxxl)

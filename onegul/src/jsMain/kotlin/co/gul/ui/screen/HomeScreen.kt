@@ -26,16 +26,16 @@ fun HomeScreen(onNavigate: (Screen) -> Unit) {
             // Left: headline copy
             Div {
                 H1(attrs = { classes(AppStyle.heroHeading) }) {
-                    Text("Android Developer, ")
+                    Text("Android Engineer")
                     Br()
-                    Em(attrs = { classes(AppStyle.heroAccent) }) { Text("proximity tech") }
+                    Em(attrs = { classes(AppStyle.heroAccent) }) { Text("Reader") }
                     Br()
-                    Text("& low-level systems.")
+                    Text("slow walker.")
                 }
 
                 P(attrs = { classes(AppStyle.heroBody) }) {
                     Text(
-                        "Six years shipping Android apps at scale — from BLE and Wi-Fi P2P based automated attendance systems at 99%+ accuracy, to native RTMP pipelines, OpenGL ES renderers, and IoT use cases. Currently building Linger: a no-internet proximity-first local discovery app with interest-based matchmaking."
+                        "Six years building and managing Android apps — BLE and Wi-Fi P2P based automated attendance, RTMP live-streaming, and IoT use cases. Love making apps better, and better apps. I love long slow walks, think ideas, listen to Nusrat Fateh Ali Khan and Satinder Sartaaj, read Mir Taqi Mir's ghazals, Cavafy poems, Literature, Mathematics, and Computer Science, and having beers."
                     )
                 }
 
@@ -67,7 +67,7 @@ fun HomeScreen(onNavigate: (Screen) -> Unit) {
                 ProjectCard(
                     name = "Linger",
                     subtitle = "Connect to nearby people",
-                    description = "A local discovery and connections app — no internet required. Interest-based matchmaking using local NLP on bios advertised inside BLE packets. Advertise, discover, connect and chat purely through local connections.",
+                    description = "A local discovery and connections app — no internet required. Interest-based matchmaking using local NLP on bios advertised inside BLE packets. Shows 'Reads Proust', 'loves trekking' on nearby profile discoveries. Advertise, discover, connect and chat with nearby people purely through local connections.",
                     tags = PROJECT_TAGS_LINGER,
                     status = "Active · Private beta"
                 )
