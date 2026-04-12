@@ -4,7 +4,8 @@ plugins {
     alias(libs.plugins.composeCompiler)
 }
 
-version = "1.0.0"
+// Updated on 12/04/2026 at 22:03 IST
+version = "1.0.1"
 
 kotlin {
     jvmToolchain(21)
