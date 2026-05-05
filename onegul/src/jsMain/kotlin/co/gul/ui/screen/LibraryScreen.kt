@@ -4,7 +4,6 @@ import androidx.compose.runtime.*
 import co.gul.model.content.BOOKS
 import co.gul.model.content.Book
 import co.gul.model.content.ReadStatus
-import co.gul.model.screen.Screen
 import co.gul.ui.component.Divider
 import co.gul.ui.component.SectionHeader
 import co.gul.ui.component.SiteFooter
@@ -16,7 +15,7 @@ import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
 @Composable
-fun LibraryScreen(onNavigate: (Screen) -> Unit) {
+fun LibraryScreen() {
     var filter by remember { mutableStateOf<ReadStatus?>(null) }
 
     val displayed = if (filter == null) BOOKS else BOOKS.filter { it.status == filter }
@@ -26,7 +25,7 @@ fun LibraryScreen(onNavigate: (Screen) -> Unit) {
             Header {
                 SectionHeader(
                     heading = "Library",
-                    subheading = "A curated bookshelf. Mostly Computer Science, Classical Philosophy, Literature, and the occasional history. " +
+                    subheading = "Mostly Computer Science, Mathematics, Literature, Philosophy, and the occasional history. " +
                             "I love to read slowly and reread great books.."
                 )
             }
@@ -75,7 +74,7 @@ fun LibraryScreen(onNavigate: (Screen) -> Unit) {
             }
         }
 
-        SiteFooter(onNavigate)
+        SiteFooter()
     }
 }
 
@@ -97,7 +96,7 @@ private fun BookSection(title: String, books: List<Book>) {
 
     H2(attrs = {
         style {
-            fontFamily(Font.display)
+            fontFamily(Font.DISPLAY)
             fontSize(26.px)
             fontWeight(400)
             color(Palette.onSurface)
@@ -149,7 +148,7 @@ private fun BookCard(book: Book) {
             P(attrs = { classes(AppStyle.bookAuthor) }) { Text(book.author) }
             Span(attrs = {
                 style {
-                    fontFamily(Font.mono)
+                    fontFamily(Font.MONO)
                     fontSize(11.px)
                     color(Palette.onSurfaceVariant)
                 }
@@ -159,7 +158,7 @@ private fun BookCard(book: Book) {
         // Genre tag
         Span(attrs = {
             style {
-                fontFamily(Font.mono)
+                fontFamily(Font.MONO)
                 fontSize(11.px)
                 color(Palette.onSurfaceVariant)
                 property("letter-spacing", "0.04em")

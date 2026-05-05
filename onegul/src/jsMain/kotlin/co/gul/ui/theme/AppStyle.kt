@@ -22,7 +22,7 @@ object AppStyle : StyleSheet() {
     }
 
     val navLogo by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         fontSize(22.px)
         fontWeight(600)
         color(Palette.onSurface)
@@ -39,7 +39,7 @@ object AppStyle : StyleSheet() {
     }
 
     val navLink by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         fontWeight(500)
         padding(Spacing.sm, Spacing.md)
@@ -67,19 +67,8 @@ object AppStyle : StyleSheet() {
 
     // --- Home ------------------------------------------------------------------------------
 
-    val heroSection by style {
-        display(DisplayStyle.Grid)
-        property("grid-template-columns", "1fr 1fr")
-        property("min-height", "calc(100vh - 64px)")
-        property("align-items", "center")
-        property("max-width", "1200px")
-        property("margin", "0 auto")
-        padding(Spacing.xxxl, Spacing.xl)
-        gap(Spacing.xxxl)
-    }
-
     val heroHeading by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         property("font-size", "clamp(42px, 5.5vw, 72px)")
         fontWeight(300)
         lineHeight(1.1.em)
@@ -93,23 +82,15 @@ object AppStyle : StyleSheet() {
     }
 
     val heroBody by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(17.px)
         lineHeight(1.75.em)
         color(Palette.onSurfaceVariant)
         marginTop(Spacing.lg)
-        property("max-width", "480px")
-    }
-
-    val heroTags by style {
-        display(DisplayStyle.Flex)
-        flexWrap(FlexWrap.Wrap)
-        gap(Spacing.sm)
-        marginTop(Spacing.xl)
     }
 
     val tag by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(12.px)
         fontWeight(400)
         padding(4.px, Spacing.md)
@@ -117,12 +98,6 @@ object AppStyle : StyleSheet() {
         backgroundColor(Palette.primaryContainer)
         color(Palette.onPrimaryContainer)
         property("letter-spacing", "0.03em")
-    }
-
-    val heroVisual by style {
-        display(DisplayStyle.Flex)
-        flexDirection(FlexDirection.Column)
-        gap(Spacing.md)
     }
 
     val projectCard by style {
@@ -135,7 +110,7 @@ object AppStyle : StyleSheet() {
     }
 
     val projectCardTitle by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         fontSize(22.px)
         fontWeight(500)
         color(Palette.onSurface)
@@ -143,45 +118,11 @@ object AppStyle : StyleSheet() {
     }
 
     val projectCardBody by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         lineHeight(1.65.em)
         color(Palette.onSurfaceVariant)
         marginTop(Spacing.sm)
-    }
-
-    val statRow by style {
-        display(DisplayStyle.Grid)
-        property("grid-template-columns", "repeat(3, 1fr)")
-        gap(Spacing.md)
-        marginTop(Spacing.xl)
-        property("max-width", "1200px")
-        property("margin-left", "auto")
-        property("margin-right", "auto")
-        padding(0.px, Spacing.xl, Spacing.xxxl)
-    }
-
-    val statCard by style {
-        backgroundColor(Palette.surfaceContainer)
-        borderRadius(Radius.md)
-        padding(Spacing.lg, Spacing.xl)
-        textAlign("center")
-        border(1.px, LineStyle.Solid, Palette.outlineVariant)
-    }
-
-    val statNumber by style {
-        fontFamily(Font.display)
-        fontSize(42.px)
-        fontWeight(600)
-        color(Palette.primary)
-        lineHeight(1.0.em)
-    }
-
-    val statLabel by style {
-        fontFamily(Font.body)
-        fontSize(13.px)
-        color(Palette.onSurfaceVariant)
-        marginTop(Spacing.xs)
     }
 
     // --- Section Scaffold -------------------------------------------------------------------
@@ -193,7 +134,7 @@ object AppStyle : StyleSheet() {
     }
 
     val sectionHeading by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         property("font-size", "clamp(32px, 4vw, 52px)")
         fontWeight(300)
         color(Palette.onSurface)
@@ -202,7 +143,7 @@ object AppStyle : StyleSheet() {
     }
 
     val sectionSubheading by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(16.px)
         color(Palette.onSurfaceVariant)
         marginTop(Spacing.md)
@@ -236,7 +177,7 @@ object AppStyle : StyleSheet() {
     }
 
     val roleCompany by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         fontSize(24.px)
         fontWeight(600)
         color(Palette.onSurface)
@@ -244,7 +185,7 @@ object AppStyle : StyleSheet() {
     }
 
     val roleTitle by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(15.px)
         fontWeight(500)
         color(Palette.primary)
@@ -252,14 +193,14 @@ object AppStyle : StyleSheet() {
     }
 
     val rolePeriod by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(12.px)
         color(Palette.onSurfaceVariant)
         property("letter-spacing", "0.04em")
     }
 
     val roleSummary by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(15.px)
         lineHeight(1.7.em)
         color(Palette.onSurfaceVariant)
@@ -275,7 +216,7 @@ object AppStyle : StyleSheet() {
     }
 
     val highlight by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         lineHeight(1.65.em)
         color(Palette.onSurface)
@@ -298,7 +239,7 @@ object AppStyle : StyleSheet() {
     }
 
     val skillCategory by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(11.px)
         fontWeight(400)
         color(Palette.primary)
@@ -335,7 +276,7 @@ object AppStyle : StyleSheet() {
     }
 
     val bookTitle by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         fontSize(18.px)
         fontWeight(600)
         color(Palette.onSurface)
@@ -344,14 +285,14 @@ object AppStyle : StyleSheet() {
     }
 
     val bookAuthor by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(13.px)
         color(Palette.primary)
         fontWeight(500)
     }
 
     val bookNote by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         lineHeight(1.65.em)
         color(Palette.onSurfaceVariant)
@@ -360,7 +301,7 @@ object AppStyle : StyleSheet() {
     }
 
     val bookStatus by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(11.px)
         padding(3.px, Spacing.sm)
         borderRadius(Radius.full)
@@ -402,7 +343,7 @@ object AppStyle : StyleSheet() {
     }
 
     val noteTitle by style {
-        fontFamily(Font.display)
+        fontFamily(Font.DISPLAY)
         fontSize(22.px)
         fontWeight(500)
         color(Palette.onSurface)
@@ -411,7 +352,7 @@ object AppStyle : StyleSheet() {
     }
 
     val noteMeta by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(12.px)
         color(Palette.onSurfaceVariant)
         marginTop(Spacing.xs)
@@ -419,7 +360,7 @@ object AppStyle : StyleSheet() {
     }
 
     val noteExcerpt by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         lineHeight(1.7.em)
         color(Palette.onSurfaceVariant)
@@ -427,7 +368,7 @@ object AppStyle : StyleSheet() {
     }
 
     val noteBody by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(15.px)
         lineHeight(1.8.em)
         color(Palette.onSurface)
@@ -436,7 +377,7 @@ object AppStyle : StyleSheet() {
     }
 
     val noteTag by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(11.px)
         padding(3.px, Spacing.sm)
         borderRadius(Radius.full)
@@ -466,7 +407,7 @@ object AppStyle : StyleSheet() {
     // --- Buttons -----------------------------------------------------------------------
 
     val btnPrimary by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         fontWeight(500)
         padding(Spacing.md, Spacing.xl)
@@ -482,7 +423,7 @@ object AppStyle : StyleSheet() {
     }
 
     val btnOutline by style {
-        fontFamily(Font.body)
+        fontFamily(Font.BODY)
         fontSize(14.px)
         fontWeight(500)
         padding(Spacing.md, Spacing.xl)
@@ -501,7 +442,6 @@ object AppStyle : StyleSheet() {
     // --- Footer -------------------------------------------------------------------------------
 
     val footer by style {
-        property("border-top", "1px solid ${Palette.outlineVariant}")
         padding(Spacing.xl)
         display(DisplayStyle.Flex)
         justifyContent(JustifyContent.SpaceBetween)
@@ -511,7 +451,7 @@ object AppStyle : StyleSheet() {
     }
 
     val footerText by style {
-        fontFamily(Font.mono)
+        fontFamily(Font.MONO)
         fontSize(12.px)
         color(Palette.onSurfaceVariant)
         property("letter-spacing", "0.04em")

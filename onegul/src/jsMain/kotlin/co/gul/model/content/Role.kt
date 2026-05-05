@@ -21,7 +21,7 @@ val ROLES = listOf(
             "Attendance Engine: Achieved 99%+ detection accuracy by orchestrating BLE, Wi-Fi P2P, NSD, WebSocket, Retrofit, Services, and UI across a heavily multithreaded module.",
             "App Ownership: Managed full Play Store release cycle — development, QA, release, and production bug tracking.",
             "Feature Development: Shipped complete app UI/UX redesign, custom Zoom SDK integration, real-time messaging, multi-language support, rich-text editors, and in-app payments.",
-            "Architecture Migration: Led migration from legacy monolithic app codebase to MVVM + Clean Architecture, Modularization + Gradle Plugins and Build Variants, resolving long-standing performance bottlenecks and improving maintainability."
+            "Architecture Migration: Led migration from legacy monolithic app codebase to MVVM + Clean Architecture, Modularization + Gradle Plugins and Build Variants, resolving long-standing code scalability and maintainability issues."
         ),
         tags = listOf(
             "Java",
