@@ -4,7 +4,6 @@ import androidx.compose.runtime.*
 import co.gul.model.content.NOTES
 import co.gul.model.content.Note
 import co.gul.model.content.NoteTag
-import co.gul.model.screen.Screen
 import co.gul.ui.component.Divider
 import co.gul.ui.component.SectionHeader
 import co.gul.ui.component.SiteFooter
@@ -16,7 +15,7 @@ import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 
 @Composable
-fun NotebookScreen(onNavigate: (Screen) -> Unit) {
+fun NotebookScreen() {
     var expanded by remember { mutableStateOf<Int?>(null) }
 
     Main {
@@ -24,8 +23,7 @@ fun NotebookScreen(onNavigate: (Screen) -> Unit) {
             Header {
                 SectionHeader(
                     heading = "Notebook",
-                    subheading = "Notes, observations, and drafts. Technical findings from BLE and Wi-Fi P2P work, " +
-                            "ideas about proximity and decentralised systems, and the occasional philosophical aside."
+                    subheading = "This is a diary for collecting random thoughts, observations and findings. I update this irregularly."
                 )
             }
 
@@ -45,46 +43,9 @@ fun NotebookScreen(onNavigate: (Screen) -> Unit) {
                     )
                 }
             }
-
-            Divider()
-
-            // Colophon
-            Aside(attrs = {
-                style {
-                    backgroundColor(Palette.surfaceContainer)
-                    borderRadius(16.px)
-                    padding(Spacing.xl)
-                    border(1.px, LineStyle.Solid, Palette.outlineVariant)
-                }
-            }) {
-                H3(attrs = {
-                    style {
-                        fontFamily(Font.display)
-                        fontSize(22.px)
-                        fontWeight(500)
-                        color(Palette.onSurface)
-                        property("letter-spacing", "-0.01em")
-                        marginBottom(Spacing.sm)
-                    }
-                }) { Text("About this notebook") }
-                P(attrs = {
-                    style {
-                        fontFamily(Font.body)
-                        fontSize(14.px)
-                        lineHeight(1.75.em)
-                        color(Palette.onSurfaceVariant)
-                    }
-                }) {
-                    Text(
-                        "These are working notes, not polished essays. They document what I've found, what I'm thinking about, " +
-                                "and what I haven't figured out yet. Technical notes lean toward Android proximity systems (BLE, Wi-Fi P2P, NSD). " +
-                                "Observations and ideas wander further. I update this irregularly."
-                    )
-                }
-            }
         }
 
-        SiteFooter(onNavigate)
+        SiteFooter()
     }
 }
 
@@ -138,7 +99,7 @@ private fun NoteCard(note: Note, isExpanded: Boolean, onToggle: () -> Unit) {
         } else {
             P(attrs = {
                 style {
-                    fontFamily(Font.mono)
+                    fontFamily(Font.MONO)
                     fontSize(12.px)
                     color(Palette.primary)
                     marginTop(Spacing.md)

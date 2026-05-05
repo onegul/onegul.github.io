@@ -2,11 +2,11 @@ package co.gul
 
 import androidx.compose.runtime.*
 import co.gul.model.screen.Screen
+import co.gul.ui.component.NavBar
 import co.gul.ui.screen.HomeScreen
 import co.gul.ui.screen.LibraryScreen
 import co.gul.ui.screen.NotebookScreen
 import co.gul.ui.screen.ResumeScreen
-import co.gul.ui.component.NavBar
 import co.gul.ui.theme.AppStyle
 import org.jetbrains.compose.web.css.Style
 import org.jetbrains.compose.web.dom.Div
@@ -32,10 +32,10 @@ fun App() {
         NavBar(current = currentScreen, onNavigate = ::navigate)
 
         when (currentScreen) {
-            Screen.Home -> HomeScreen(onNavigate = ::navigate)
-            Screen.Resume -> ResumeScreen(onNavigate = ::navigate)
-            Screen.Library -> LibraryScreen(onNavigate = ::navigate)
-            Screen.Notebook -> NotebookScreen(onNavigate = ::navigate)
+            Screen.Home -> HomeScreen()
+            Screen.Resume -> ResumeScreen()
+            Screen.Library -> LibraryScreen()
+            Screen.Notebook -> NotebookScreen()
         }
     }
 }
